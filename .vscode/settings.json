@@ -1,0 +1,11 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "jars/jackson-core-2.16.0.jar",
+        "jars/jackson-databind-2.16.0.jar",
+        "jars/jackson-dataformat-xml-2.16.0.jar",
+        "jars/jackson-annotations-2.16.0.jar",
+        "jars/stax2-api-4.2.1.jar",
+        "jars/woodstox-core-6.5.1.jar"
+    ]
+}
