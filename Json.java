@@ -1,4 +1,5 @@
 import java.io.File;
+import java.io.FileNotFoundException;
 
 import com.fasterxml.jackson.databind.*;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
@@ -19,7 +20,7 @@ public class Json{
             File jsonFile = new File("bookings.json");
             objectMapper.writerWithDefaultPrettyPrinter().writeValue(jsonFile, jsonNode);
             System.out.println("Json file created");
-        }catch(NullPointerException e){
+        }catch(FileNotFoundException e){
             System.out.println("No existe el archivo");
         }catch(Exception e){
             System.out.println(e);
